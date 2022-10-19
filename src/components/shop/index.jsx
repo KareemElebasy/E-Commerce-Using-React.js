@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../redux/cartSlice";
 
 function Shop() {
 
@@ -17,7 +19,11 @@ function Shop() {
     getProds();
 
   }, []);
+  const dispatch = useDispatch();
 
+  const handleAddToCart = (product) => {
+    dispatch(addToCart(product));
+  };
   console.log(prods);
 
     return (<>
@@ -34,7 +40,7 @@ function Shop() {
                     <Card.Title>{prod.title}</Card.Title>
                     <Card.Text>{prod.description} </Card.Text>
                     <Card.Text className="price text-danger fz-4">{prod.price} EGP </Card.Text>
-                    <Button variant="dark" className="me-3">Add To Cart</Button>
+                    <Button   onClick={() => handleAddToCart(prod)} variant="dark" className="me-3">Add To Cart</Button>
                     <Link to ={`details/${prod.id}`}> <Button variant="dark">Details</Button></Link>
                   </Card.Body>
                 </Card>

@@ -8,8 +8,8 @@ function Navbar() {
     {/* <li><Link to="/shop">SHOP</Link> </li> */}
     <li><Link to="/about">ABOUT</Link> </li>
     <li><Link to="/counter">Counter</Link> </li>
-    {/* <li><link to="">CART</link> </li> */}
-</ul>
+    <li><Link to="/cart">Cart</Link> </li>
+    </ul>
 
   </div>;
 }

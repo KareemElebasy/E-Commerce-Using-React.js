@@ -7,6 +7,7 @@ import Shop from './components/home'
 import About from './components/about'
 import Details from './components/shop/details';
 import Counter from './components/counter/counter'
+import Cart from './components/cart';
 function App() {
 
   return (
@@ -20,6 +21,7 @@ function App() {
       <Route path='/about' element={<About/>}/>
       <Route path='/details/:id' element={<Details/>}/>
       <Route path='/counter' element={<Counter/>}/>
+      <Route path='/cart' element={<Cart/>}/>
     </Routes>
     </BrowserRouter>
   );
