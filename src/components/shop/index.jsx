@@ -18,12 +18,14 @@ function Shop() {
 
   }, []);
 
+  console.log(prods);
+
     return (<>
       <h2 className="pb-4"> Our Products </h2>
       <div className="container">
         <div className="row">
           {prods.map((prod) => {
-            // console.log(prod);
+            console.log(prod);
             return (
               <div className="col " key={prod.id} >
                 <Card style={{ width: "18rem" ,}}>
@@ -33,7 +35,7 @@ function Shop() {
                     <Card.Text>{prod.description} </Card.Text>
                     <Card.Text className="price text-danger fz-4">{prod.price} EGP </Card.Text>
                     <Button variant="dark" className="me-3">Add To Cart</Button>
-                    <Link to ={`shop/${prod.id}`}> <Button variant="dark">Details</Button></Link>
+                    <Link to ={`details/${prod.id}`}> <Button variant="dark">Details</Button></Link>
                   </Card.Body>
                 </Card>
               </div>

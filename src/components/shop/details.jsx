@@ -13,7 +13,7 @@ function Details() {
       .then((res) => res.json())
       .then((json) => setProd(json));
   };
-
+  
   useEffect(() => {
     getProd();
   }, []);
