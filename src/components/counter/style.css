@@ -14,7 +14,7 @@
     padding-bottom: 2rem;
     color: #09334b;
   }
-  .btn {
+  .btn-counter {
     font-size: 2rem;
     padding: 1rem 2.5rem;
     border-radius: 2em;
@@ -24,7 +24,7 @@
     border: 2px solid#09334b;
     margin: 1rem;
   }
-  .btn:hover {
+  .btn-counter:hover {
     background-color: #4095c6;
     cursor: pointer;
   }

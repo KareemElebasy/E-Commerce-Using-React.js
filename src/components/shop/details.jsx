@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 
 function Details() {
  const params = useParams();
-  const {id}=useParams
+  // const {id}=useParams
   
   const [prod, setProd] = useState({});
 
@@ -15,7 +15,7 @@ function Details() {
   };
   
   useEffect(() => {
-    getProd();
+    getProd()
   }, []);
 
   return (

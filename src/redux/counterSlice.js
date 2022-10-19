@@ -19,7 +19,7 @@ export const counterSlice = createSlice({
         if (state.counter > 0){
             state.counter = state.counter-action.payload
         }
-        else if ( state.counter = 0){
+        else if ( state.counter === 0){
             state.counter =0
         }
     },

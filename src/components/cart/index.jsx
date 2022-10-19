@@ -46,10 +46,10 @@ const Cart = () => {
                     </div>
                   </div>
                   <div className="col-md-2 d-flex justify-content-center">
-                    <div>
+                    {/* <div>
                       <p className="small text-muted mb-4 pb-2">Total</p>
                       <p className="lead fw-normal mb-0">$</p>
-                    </div>
+                    </div> */}
                   </div>
                   <div className="col-md-2 d-flex justify-content-center">
                     <div>

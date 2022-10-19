@@ -30,14 +30,14 @@ const decreace = ()=>{
         <div className="Btns">
         <button
 
-          className="btn btn-increase"
+          className="btn-counter"
           onClick={increace}
         >
           Increase Counter
         </button>
 
         <button
-          className="btn btn-decrease"
+          className="btn-counter"
           onClick={decreace}
         >
           Decrease Counter
