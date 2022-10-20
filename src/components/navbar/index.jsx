@@ -9,6 +9,7 @@ function Navbar() {
     <li><Link to="/about">ABOUT</Link> </li>
     <li><Link to="/counter">Counter</Link> </li>
     <li><Link to="/cart">Cart</Link> </li>
+    <li><Link to="/singup">singUp</Link> </li>
     </ul>
 
   </div>;

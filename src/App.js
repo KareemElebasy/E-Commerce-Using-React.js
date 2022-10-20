@@ -8,6 +8,8 @@ import About from './components/about'
 import Details from './components/shop/details';
 import Counter from './components/counter/counter'
 import Cart from './components/cart';
+import Singup from './components/singUp';
+import Singin from './components/singUp';
 function App() {
 
   return (
@@ -22,6 +24,7 @@ function App() {
       <Route path='/details/:id' element={<Details/>}/>
       <Route path='/counter' element={<Counter/>}/>
       <Route path='/cart' element={<Cart/>}/>
+      <Route path='/singup' element={<Singup/>}/>
     </Routes>
     </BrowserRouter>
   );
